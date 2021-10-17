@@ -1,0 +1,38 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.checkbox-container {
+  text-align: right;
+  
+}
+
+.avatar {
+  height: 3rem;
+  width: 3rem;
+}
+
+.button-text {
+  color: white;
+  align-self: center;
+}
+
+.button {
+  background-color: rgb(57, 56, 56);
+  margin: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-label {
+  margin-top: 3rem;
+  
+}
