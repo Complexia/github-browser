@@ -21,7 +21,7 @@ Builds the app for production to the `build` folder.\
 
 # Project run-through:
 
-HomePage.txt contains all of the code logic, including several components that make up the interfce. Component RepoBox, which is the box enclosure for each GitHub repository that is displayed is a bootstrap info card, slightly modified to include the CheckBox tick component.
+HomePage.tsx contains all of the code logic, including several components that make up the interfce. Component RepoBox, which is the box enclosure for each GitHub repository that is displayed is a bootstrap info card, slightly modified to include the CheckBox tick component.
 
 The checkbox and its functionality was a little tricky, since each individual RepoBox had to have one associated with it, with its own state. Since the hook useState can only be called at top level, it wasn't a viable option to initialize the checkbox within the RepoBox component. Instead, the checkbox is initialized at top level (HomePage), and then passed onto the RepoBox as a prop. It contains the id of the RepoBox. When the checkbox is unticked (invisible), the onChange function adds the id of the checkbox to localStorage. When it's ticked (visible), it is removed from localStorage. RepoBox checks within localStorage for id of each RepoBox, and if it contains it, does not display, otherwise displays. This allows the state of the checkbox to persist a page refresh.
 
