@@ -27,6 +27,5 @@ The checkbox and its functionality was a little tricky, since each individual Re
 
 The buttons on top and bottom of the page, for pagination functionality, work by altering the counter (useState) of the top level component, and the count is then passed as a prop to the function getData which fetches data from the API using axios and uses the count parameter for page number.
 
-I did not make the page number persist a page refresh because it was not a requirement. Adding the count to localStorage would do it, and if it was neccesary, I could add this feature.
 
-If I had more time, I could add a better pagination system where user could navigate to a specific page, go back to the first page, choose how many items per page to display, and so on. I would also cache recently fetched data, so that when user goes to a page he previously visited the API call is not made redunduntly.
+Fun todos: a better pagination system where user could navigate to a specific page, go back to the first page, choose how many items per page to display, and so on. Also cache recently fetched data, so that when user goes to a page he previously visited the API call is not made redunduntly.
